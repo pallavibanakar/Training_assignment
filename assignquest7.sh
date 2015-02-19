@@ -1,5 +1,7 @@
 mkdir abc
- cp -r assignment/public_html/ abc/
-cd abc
-cp -r abc/public_html/ assignment/
+cp -r public_html/ abc/
+
+cp -r abc/public_html/ public_html/
+cd public_html
+mv public_html/ public_html_renamed/
 
