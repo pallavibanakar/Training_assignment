@@ -1,0 +1,1 @@
+(rename -n 's/\.txt$/_\.txt/' *.txt)|tee assignment.log
