@@ -1,0 +1,24 @@
+$("#form_equation").submit(function(){
+		var parse_equation=$("#equation").val();
+	alert("user binding!!!");
+		parse(parse_equation);
+		e.preventDefault();
+    });
+
+
+ $("#form_equation").submit(function(e){
+		var another_doc=document;
+                var another_script=another_doc.createElement('script');
+                another_script=another_doc.standardCreateElement('script');
+                another_script.setAttribute('type','text/javascript');
+                another_script.setAttribute('src','js/lib/library.js');
+                another_doc.lastChild.firstChild.appendChild(another_script);
+
+
+
+for (i = line_object.x_start; i <= line_object.x_end;i = i + line_object.step)
+{
+   y_coordinate=parseInt(-((line_object.c_constant)+x_coordinate*(line_object.a_constant)))/(line_object.b_constant);
+	context_line.lineTo(i,y_coordinate);
+	context_line.stroke();
+}
